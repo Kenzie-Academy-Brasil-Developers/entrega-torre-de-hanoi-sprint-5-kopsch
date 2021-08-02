@@ -1,0 +1,80 @@
+body {
+    background-color: hsl(206, 7%, 81%);
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.title {
+    display: block;
+    position: absolute;
+    background-color: #80d2ff;
+    border: 3px dashed #fec5bb;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 2;
+}
+
+.box {
+display: flex;
+width: 100vw;
+height: 97.5vh;
+background: linear-gradient(#fec5bb, #fcd5ce, #fae1dd, #e8e8e4, #d8e2dc, #d8e2dc);
+background-size: cover;
+justify-content: space-evenly;
+align-items: center;
+position: relative;
+}
+
+.tower {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 2vw;
+    height: 20vh;
+    background: linear-gradient(#264653 50%,#2a9d8f);
+    border-radius: 25px;  
+}
+
+.disk {
+    width: 20vw;
+    height: 2vh;
+    background-color: crimson;
+    position: absolute;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.disk-t1 {left: 6vw;}
+.disk-t2 {left: 38vw;}
+.disk-t3 {left: 69.5vw;}
+
+.disk-p1 {bottom: 40vh; background: linear-gradient(to left,#03045e,#caf0f8);}
+.disk-p2 {bottom: 42.5vh;background: linear-gradient(to left,#023e8a,#ade8f4)}
+.disk-p3 {bottom: 45vh;background: linear-gradient(to left,#0077b6,#90e0ef)}
+.disk-p4 {bottom: 47.5vh;background: linear-gradient(to left,#0096c7,#48cae4)}
+.disk-p5 {bottom: 50vh;background: linear-gradient(to left,#00b4d8,#d8e2dc)}
+
+.disk-d1 {width: 10vw; margin-left: 4.5vw;}
+.disk-d2 {width: 12.5vw; margin-left: 3.5vw;}
+.disk-d3 {width: 15vw; margin-left: 2.5vw;}
+.disk-d4 {width: 17.5vw; margin-left: 1.5vw;}
+
+@media (min-width: 768px) {
+    .disk-t1 {left: 6vw;}
+    .disk-t2 {left: 39.3vw;}
+    .disk-t3 {left: 72.2vw;}
+
+    .tower {width: 1.25vw;}
+    .title {font-size: 36px;}
+    
+    .disk-d1 {width: 5vw; margin-left: 7.8vw;}
+    .disk-d2 {width: 7.5vw; margin-left: 6.5vw;}
+    .disk-d3 {width: 10vw; margin-left: 5.5vw;}
+    .disk-d4 {width: 12.5vw; margin-left: 4.5vw;}
+    .disk-d5 {width: 15vw;margin-left: 3.5vw;}
+}
