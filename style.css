@@ -16,7 +16,7 @@ body {
     font-style: italic;
     border-radius: 20px;
     padding: 20px;
-    z-index: 2;
+    z-index: 100;
 }
 
 .box {
@@ -38,26 +38,35 @@ position: relative;
     height: 20vh;
     background: linear-gradient(#264653 50%,#2a9d8f);
     border-radius: 25px;  
+    cursor: pointer;
+}
+
+.tower:hover {
+    background: linear-gradient(90deg,rgb(138, 138, 138), rgb(255, 123, 123));
+    z-index: 1;
 }
 
 .disk {
+    pointer-events: none;
     width: 20vw;
     height: 2vh;
     background-color: crimson;
     position: absolute;
     border-radius: 20px;
     z-index: 2;
+    transition: left .5s, bottom .5s .5s;
 }
 
-.disk-t1 {left: 6vw;}
-.disk-t2 {left: 38vw;}
-.disk-t3 {left: 69.5vw;}
+.tower-1 {left: 6vw;}
+.tower-2 {left: 38vw;}
+.tower-3 {left: 69.5vw;}
 
 .disk-p1 {bottom: 40vh; background: linear-gradient(to left,#03045e,#caf0f8);}
-.disk-p2 {bottom: 42.5vh;background: linear-gradient(to left,#023e8a,#ade8f4)}
-.disk-p3 {bottom: 45vh;background: linear-gradient(to left,#0077b6,#90e0ef)}
-.disk-p4 {bottom: 47.5vh;background: linear-gradient(to left,#0096c7,#48cae4)}
-.disk-p5 {bottom: 50vh;background: linear-gradient(to left,#00b4d8,#d8e2dc)}
+.disk-p2 {bottom: 42.5vh; background: linear-gradient(to left,#023e8a,#ade8f4)}
+.disk-p3 {bottom: 45vh; background: linear-gradient(to left,#0077b6,#90e0ef)}
+.disk-p4 {bottom: 47.5vh; background: linear-gradient(to left,#0096c7,#48cae4)}
+.disk-p5 {bottom: 50vh; background: linear-gradient(to left,#00b4d8,#d8e2dc)}
+.disk-p0 {bottom: 65vh; background: linear-gradient(to left,#ff3333,#3f4cff)}
 
 .disk-d1 {width: 10vw; margin-left: 4.5vw;}
 .disk-d2 {width: 12.5vw; margin-left: 3.5vw;}
