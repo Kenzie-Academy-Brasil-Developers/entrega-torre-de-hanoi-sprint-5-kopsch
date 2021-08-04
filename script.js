@@ -22,16 +22,26 @@ function moveDisk (towerOrigin, towerDestiny) {
     let DiskPos = document.querySelector(`.disk-d${disk}`)
     DiskPos.classList.add("disk-p0")
     towerPosition[towerDestiny].push(disk)
-    setTimeout(renderize, 1000)
+    setTimeout(renderize, 2000)
 }
 
-firstTower.addEventListener("click", function() {
-    if (movements.length && movements[0].length === 1) {
-        movements[0].push(secondTower)
-    } else {
-        movements.unshift([secondTower])
-    }
-    console.log(movements)
-})
+firstTower.addEventListener('click', inTower(0))
+secondTower.addEventListener('click', inTower(1))
+thirdTower.addEventListener('click', inTower(2))
 
+function inTower(n){
+    if(movements.length && movements[0].length === 1) {
+        movements[0].push(n)
+    } else {
+        movements.unshift([n])
+    }
+}
+
+console.log(movements)
+// setInterval(() => {
+//     if(movements.length && movements[movements.length - 1].length === 2) {
+//         let m = movements.pop()
+//         moveDisk(m[0], m[1])
+//     }
+// }, 1000)
 renderize()
