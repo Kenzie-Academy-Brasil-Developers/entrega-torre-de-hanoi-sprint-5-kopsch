@@ -16,7 +16,7 @@ body {
     font-style: italic;
     border-radius: 20px;
     padding: 20px;
-    z-index: 100;
+    z-index: 4;
 }
 
 .box {
@@ -54,7 +54,7 @@ position: relative;
     position: absolute;
     border-radius: 20px;
     z-index: 2;
-    transition: left .5s, bottom .5s .5s;
+    transition: left .2s, bottom .2s .2s;
 }
 
 .tower-1 {left: 6vw;}
