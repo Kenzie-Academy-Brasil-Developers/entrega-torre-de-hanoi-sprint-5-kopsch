@@ -50,5 +50,9 @@ setInterval(() => {
         let m = movements.pop()
         moveDisk(m[0], m[1])
     }
-}, 500)
+}, 200)
 renderize()
+
+if(towerPosition[[], [5, 4, 3, 2, 1], []]){
+    window.alert("parabens, você venceu !!!")
+}
