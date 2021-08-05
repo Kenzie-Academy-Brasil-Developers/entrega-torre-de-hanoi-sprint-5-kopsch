@@ -51,7 +51,7 @@ function inTower(n){
 }
 
 function youWin() {
-    if(towerPosition[1].length === 5){
+    if(towerPosition[1].length === 1){
         title.classList.add("hidden")
         box.classList.add("hidden")
         congratulation.classList.remove("hidden")
