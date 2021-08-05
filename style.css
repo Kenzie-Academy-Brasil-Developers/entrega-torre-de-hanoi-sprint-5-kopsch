@@ -18,6 +18,22 @@ body {
     z-index: 4;
 }
 
+.subtitle {
+    position: absolute;
+    background-color: #80d2ff;
+    border: 3px dashed #fec5bb;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-style: italic;
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 4;
+    bottom: 15vh;
+    width: 20vw;
+    text-align: center;
+}
+
 .box {
 display: flex;
 width: 100vw;
@@ -120,6 +136,13 @@ position: relative;
 
     .congratulation {
         font-size: 36pt;
+    }
+
+    .subtitle {
+        font-size: 12pt;
+        width: 30vw;
+        text-align: center;
+        bottom: 20vh;
     }
 }
 
