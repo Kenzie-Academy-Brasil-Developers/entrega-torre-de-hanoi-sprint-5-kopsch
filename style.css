@@ -83,6 +83,7 @@ position: relative;
 .disk-d3 {width: 15vw; margin-left: 2.5vw;}
 .disk-d4 {width: 17.5vw; margin-left: 1.5vw;}
 
+ 
 @media (min-width: 768px) {
     .disk-t1 {left: 6vw;}
     .disk-t2 {left: 39.3vw;}

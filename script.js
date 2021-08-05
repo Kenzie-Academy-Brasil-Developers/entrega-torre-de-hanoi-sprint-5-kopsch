@@ -14,6 +14,7 @@ function renderize() {
             })
             DiskPos.classList.add(`tower-${(towerNum + 1)}`)
             DiskPos.classList.add(`disk-p${(diskNum + 1)}`)
+            
         })
     })
 }
