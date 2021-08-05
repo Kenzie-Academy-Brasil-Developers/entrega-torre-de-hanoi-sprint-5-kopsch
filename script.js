@@ -1,9 +1,14 @@
 let towerPosition = [[5, 4, 3, 2, 1],[],[]]
+let clapping = new Audio("src/clapping.wav") 
+console.log(towerPosition[0].length)
 let diskPosition = ["disk-p1", "disk-p2", "disk-p3", "disk-p4", "disk-p5","disk-p0",
                     "tower-1", "tower-2", "tower-3"]
 let firstTower = document.querySelector("#t1")
 let secondTower = document.querySelector("#t2")
 let thirdTower = document.querySelector("#t3")
+let title = document.querySelector(".title")
+let box = document.querySelector(".box")
+let congratulation = document.querySelector(".congratulation")
 let movements = []
 function renderize() {
     towerPosition.forEach((tower, towerNum) => {
@@ -29,6 +34,7 @@ function moveDisk (towerOrigin, towerDestiny) {
     let DiskPos = document.querySelector(`.disk-d${disk}`)
     DiskPos.classList.add("disk-p0")
     towerPosition[towerDestiny].push(disk)
+    setTimeout(youWin, 1400)
     setTimeout(renderize, 500)
 }
 
@@ -44,6 +50,14 @@ function inTower(n){
     }
 }
 
+function youWin() {
+    if(towerPosition[1].length === 5){
+        title.classList.add("hidden")
+        box.classList.add("hidden")
+        congratulation.classList.remove("hidden")
+        clapping.play()
+    }
+}
 
 setInterval(() => {
     if(movements.length && movements[movements.length - 1].length === 2) {
