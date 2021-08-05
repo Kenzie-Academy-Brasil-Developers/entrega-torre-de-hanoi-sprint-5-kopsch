@@ -44,7 +44,17 @@ position: relative;
 .tower:hover {
     background: linear-gradient(90deg,rgb(138, 138, 138), rgb(255, 123, 123));
     z-index: 1;
+   
 }
+.tower::after {
+    content: " ";
+    display: block;
+    width: 5vw;
+    cursor: pointer;
+    height: 300px;
+    
+}
+
 
 .disk {
     pointer-events: none;
